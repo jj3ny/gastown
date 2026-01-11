@@ -153,7 +153,7 @@ func checkStaleBinaryWarning() {
 				info.CommitsBehind, version.ShortCommit(info.BinaryCommit), version.ShortCommit(info.RepoCommit))
 		}
 		fmt.Fprintf(os.Stderr, "%s %s\n", style.WarningPrefix, msg)
-		fmt.Fprintf(os.Stderr, "    %s Run 'gt install' to update\n", style.ArrowPrefix)
+		fmt.Fprintf(os.Stderr, "    %s Run 'gt update' to rebuild\n", style.ArrowPrefix)
 	}
 }
 
